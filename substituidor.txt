@@ -1,0 +1,20 @@
+orignal;substituido
+ d[aeo][s]{0,1} ; 
+ [ne][aem] ; 
+s[.]a[.];
+ e ; 
+,; 
+[-]; 
+bb ;banco brasil 
+universidade federal;universidade
+b[.]v[.];
+ltd[a]{0,1};
+[.,];
+[ ]$;
+[/]; 
+ para ; 
+ [ao][s]{0,1} ; 
+fundacao universidade;universidade
+ s a;
+ sa ; 
+[ ][ ]+; 
