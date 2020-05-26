@@ -1,0 +1,489 @@
+ID;Sigla;Nome
+1;CD ;Câmara dos Deputados
+3;SF ;Senado Federal
+4;TCU ;Tribunal de Contas da União
+5;STF ;Supremo Tribunal Federal
+6;STJ ;Superior Tribunal de Justiça
+8;TRF1 ;Tribunal Regional Federal da 1a. Região
+9;TRF2 ;Tribunal Regional Federal da 2a. Região
+10;TRF3 ;Tribunal Regional Federal da 3a. Região
+11;TRF4 ;Tribunal Regional Federal da 4a. Região
+12;TRF5 ;Tribunal Regional Federal da 5a. Região
+13;STM ;Superior Tribunal Militar
+14;TSE ;Tribunal Superior Eleitoral
+15;TRE-AC ;Tribunal Regional Eleitoral do Acre
+16;TRE-AL ;Tribunal Regional Eleitoral de Alagoas
+17;TRE-AM ;Tribunal Regional Eleitoral do Amazonas
+18;TRE-BA ;Tribunal Regional Eleitoral da Bahia
+19;TRE-CE ;Tribunal Regional Eleitoral do Ceará
+20;TRE-DF ;Tribunal Regional Eleitoral do Distrito Federal
+21;TRE-ES ;Tribunal Regional Eleitoral do Espírito Santo
+22;TRE-GO ;Tribunal Regional Eleitoral de Goiás
+23;TRE-MA ;Tribunal Regional Eleitoral do Maranhão
+24;TRE-MT ;Tribunal Regional Eleitoral de Mato Grosso
+25;TRE-MS ;Tribunal Regional Eleitoral de Mato Grosso do Sul
+26;TRE-MG ;Tribunal Regional Eleitoral de Minas Gerais
+27;TRE-PA ;Tribunal Regional Eleitoral do Pará
+28;TRE-PB ;Tribunal Regional Eleitoral da Paraíba
+29;TRE-PR ;Tribunal Regional Eleitoral do Paraná
+30;TRE-PE ;Tribunal Regional Eleitoral de Pernambuco
+31;TRE-PI ;Tribunal Regional Eleitoral do Piauí
+32;TRE-RJ ;Tribunal Regional Eleitoral do Rio de Janeiro
+33;TRE-RN ;Tribunal Regional Eleitoral do Rio Grande do Norte
+34;TRE-RS ;Tribunal Regional Eleitoral do Rio Grande do Sul
+35;TRE-RO ;Tribunal Regional Eleitoral de Rondônia
+36;TRE-SC ;Tribunal Regional Eleitoral de Santa Catarina
+37;TRE-SP ;Tribunal Regional Eleitoral de São Paulo
+38;TRE-SE ;Tribunal Regional Eleitoral de Sergipe
+39;TRE-TO ;Tribunal Regional Eleitoral de Tocantins
+40;TRE-RR ;Tribunal Regional Eleitoral de Roraima
+41;TRE-AP ;Tribunal Regional Eleitoral do Amapá
+43;TST ;Tribunal Superior do Trabalho
+44;TRT1 ;Tribunal Regional do Trabalho da 1a. Região - Rio de Janeiro
+45;TRT2 ;Tribunal Regional do Trabalho da 2a. Região - São Paulo
+46;TRT3 ;Tribunal Regional do Trabalho da 3a. Região - Minas Gerais
+47;TRT4 ;Tribunal Regional do Trabalho da 4a. Região - Rio Grande do Sul
+48;TRT5 ;Tribunal Regional do Trabalho da 5a. Região - Bahia
+49;TRT6 ;Tribunal Regional do Trabalho da 6a. Região - Pernambuco
+50;TRT7 ;Tribunal Regional do Trabalho da 7a. Região - Ceará
+51;TRT8 ;Tribunal Regional do Trabalho da 8a. Região - Pará_Amapá
+52;TRT9 ;Tribunal Regional do Trabalho da 9a. Região - Paraná
+53;TRT10 ;Tribunal Regional do Trabalho da 10a. Região - Distrito Federal_Tocantins
+54;TRT11 ;Tribunal Regional do Trabalho da 11a. Região - Amazonas_Roraima
+55;TRT12 ;Tribunal Regional do Trabalho da 12a. Região - Santa Catarina
+56;TRT13 ;Tribunal Regional do Trabalho da 13a. Região - Paraíba
+57;TRT14 ;Tribunal Regional do Trabalho da 14a. Região - Rondônia_Acre
+58;TRT15 ;Tribunal Regional do Trabalho da 15a. Região - Campinas_SP
+59;TRT16 ;Tribunal Regional do Trabalho da 16a. Região - Maranhão
+60;TRT17 ;Tribunal Regional do Trabalho da 17a. Região - Espírito Santo
+61;TRT18 ;Tribunal Regional do Trabalho da 18a. Região - Goiás
+62;TRT19 ;Tribunal Regional do Trabalho da 19a. Região - Alagoas
+63;TRT20 ;Tribunal Regional do Trabalho da 20a. Região - Sergipe
+64;TRT21 ;Tribunal Regional do Trabalho da 21a. Região - Rio Grande do Norte
+65;TRT22 ;Tribunal Regional do Trabalho da 22a. Região - Piauí
+66;TRT23 ;Tribunal Regional do Trabalho da 23a. Região - Mato Grosso
+67;TRT24 ;Tribunal Regional do Trabalho da 24a. Região - Mato Grosso do Sul
+68;CSJT ;Conselho Superior da Justiça do Trabalho
+69;TJDFT ;Tribunal de Justiça do Distrito Federal e dos Territórios
+71;CNJ ;Conselho Nacional de Justiça
+73;ABIN ;Agência Brasileira de Inteligência ==> SIGILOSO
+74;SEAD ;Secretaria Especial de Agricultura Familiar e do Desenvolvimento Agrário
+76;ITI ;Instituto Nacional de Tecnologia da Informação
+78;EBC ;Empresa Brasil de Comunicação S.A.
+79;EPL ;Empresa de Planejamento e Logística S.A.
+80;IN ;Imprensa Nacional
+81;MAPA ;Ministério da Agricultura, Pecuária e Abastecimento
+82;EMBRAPA ;Empresa Brasileira de Pesquisa Agropecuária
+83;CEASAMINAS ;Centrais de Abastecimento de Minas Gerais S.A.
+84;CASEMG ;Companhia de Armazéns e Silos do Estado de Minas Gerais
+85;CONAB ;Companhia Nacional de Abastecimento
+86;CEAGESP ;CEAGESP - Companhia de Entrepostos e Armazéns Gerais de São Paulo
+88;MCTIC ;Ministério da Ciência, Tecnologia, Inovações e Comunicações
+89;CNPQ ;Conselho Nacional de Desenvolvimento Científico e Tecnológico
+90;FINEP ;Financiadora de Estudos e Projetos
+91;CNEN ;Comissão Nacional de Energia Nuclear
+92;AEB ;Agência Espacial Brasileira
+93;INB ;Indústrias Nucleares do Brasil S.A.
+95;CEITEC ;Centro Nacional de Tecnologia Eletrônica Avançada - S.A.
+96;ANATEL ;Agência Nacional de Telecomunicações
+99;ECT ;Empresa Brasileira de Correios e Telégrafos
+100;Telebras ;Telecomunicações Brasileiras S.A.
+104;MF ;Ministério da Fazenda ==> SIGILOSO
+105;RFB ;Secretaria da Receita Federal do Brasil ==> SIGILOSO
+106;PGFN ;Procuradoria-Geral da Fazenda Nacional ==> SIGILOSO
+107;BCB ;Banco Central do Brasil
+108;BASA ;Banco da Amazônia S.A.
+109;CVM ;Comissão de Valores Mobiliários
+110;PREVIC ;Superintendência Nacional de Previdência Complementar
+111;SERPRO ;Serviço Federal de Processamento de Dados
+112;SUSEP ;Superintendência de Seguros Privados
+113;BNB ;Banco do Nordeste do Brasil S.A.
+114;CMB ;Casa da Moeda do Brasil
+116;CAIXA ;Caixa Econômica Federal
+119;COBRA ;COBRA Tecnologia S.A.
+120;BB ;Banco do Brasil S.A.
+122;BB DTVM ;BB Gestão de Recursos - Distribuidora de Títulos e Valores Mobiliários S.A.
+126;BB TURISMO ;BBTUR - Viagens e Turismo Ltda.
+134;EMGEA ;Empresa Gestora de Ativos
+135;ATIVOS S.A. ;ATIVOS S.A. Securitizadora de Créditos Financeiros
+138;BB CONSÓRCIOS ;BB Administradora de Consórcios S.A.
+148;CAIXA SE ;CAIXA SEGURIDADE PARTICIPACOES S_A
+150;DATAPREV ;Empresa de Tecnologia e Informações da Previdência Social
+153;MEC ;Ministério da Educação
+154;INES ;Instituto Nacional de Educação de Surdos
+155;IBC ;Instituto Benjamin Constant
+156;CPII ;Colégio Pedro II
+157;Univasf ;Fundação Universidade Federal do Vale do São Francisco
+158;UFAL ;Universidade Federal de Alagoas
+159;UFBA ;Universidade Federal da Bahia
+160;UFC ;Universidade Federal do Ceará
+162;UFG ;Universidade Federal de Goiás
+164;UFJF ;Universidade Federal de Juiz de Fora
+165;UFMG ;Universidade Federal de Minas Gerais
+166;UFPA ;Universidade Federal do Pará
+167;UFPB ;Universidade Federal da Paraíba
+168;UFPR ;Universidade Federal do Paraná
+169;UFPE ;Universidade Federal de Pernambuco
+170;UFRN ;Universidade Federal do Rio Grande do Norte
+171;UFRGS ;Universidade Federal do Rio Grande do Sul
+172;UFRJ ;Universidade Federal do Rio de Janeiro
+173;UFSC ;Universidade Federal de Santa Catarina
+174;UFSM ;Universidade Federal de Santa Maria
+175;UFRPE ;Universidade Federal Rural de Pernambuco
+176;UFRRJ ;Universidade Federal Rural do Rio de Janeiro
+177;UFRR ;Universidade Federal de Roraima
+178;UFT ;Fundação Universidade Federal do Tocantins
+179;UFCG ;Universidade Federal de Campina Grande
+180;UFRA ;Universidade Federal Rural da Amazônia
+181;UFTM ;Universidade Federal do Triângulo Mineiro
+182;UFVJM ;Universidade Federal dos Vales do Jequitinhonha e Mucuri
+183;CEFET-RJ ;Centro Federal de Educação Tecnológica Celso Suckow da Fonseca
+184;CEFET-MG ;Centro Federal de Educação Tecnológica de Minas Gerais
+185;UTFPR ;Universidade Tecnológica Federal do Paraná
+186;UNIFAL-MG ;Universidade Federal de Alfenas
+187;UNIFEI ;Universidade Federal de Itajubá
+188;UNIFESP ;Universidade Federal de São Paulo
+189;UFLA ;Universidade Federal de Lavras
+190;UFERSA ;Universidade Federal Rural do Semi-Árido
+191;UNIPAMPA ;Fundação Universidade Federal do Pampa
+192;UNILA ;Universidade Federal da Integração Latino Americana
+193;UNIR ;Fundação Universidade Federal de Rondônia
+194;UniRIO ;Universidade Federal do Estado do Rio de Janeiro
+195;UFAM ;Fundação Universidade do Amazonas
+196;FUB ;Fundação Universidade de Brasília
+197;UFMA ;Fundação Universidade Federal do Maranhão
+198;FURG ;Fundação Universidade Federal do Rio Grande
+199;UFU ;Universidade Federal de Uberlândia
+201;UFMT ;Fundação Universidade Federal de Mato Grosso
+202;UFOP ;Fundação Universidade Federal de Ouro Preto
+203;UFPel ;Fundação Universidade Federal de Pelotas
+204;UFPI ;Fundação Universidade Federal do Piauí
+205;UFSCar ;Fundação Universidade Federal de São Carlos
+206;UFS ;Fundação Universidade Federal de Sergipe
+207;UFV ;Fundação Universidade Federal de Viçosa
+208;UFMS ;Fundação Universidade Federal de Mato Grosso do Sul
+209;UFCSPA ;Fundação Universidade Federal de Ciências da Saúde de Porto Alegre
+210;UFSJ ;Fundação Universidade Federal de São João del-Rei
+211;UNIFAP ;Fundação Universidade Federal do Amapá
+212;INEP ;Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira
+213;CAPES ;Fundação Coordenação de Aperfeiçoamento de Pessoal de Nível Superior
+214;Fundaj ;Fundação Joaquim Nabuco
+215;HCPA ;Hospital de Clínicas de Porto Alegre
+216;FNDE ;Fundo Nacional de Desenvolvimento da Educação
+217;UFGD ;Fundação Universidade Federal da Grande Dourados
+218;UFRB ;Universidade Federal do Recôncavo da Bahia
+219;UFABC ;Fundação Universidade Federal do ABC
+220;HUPAA-UFAL ;Hospital Universitário Prof. Alberto Antunes
+221;HUPES-UFBA ;Complexo Hospitalar e de Saúde da Universidade Federal da Bahia
+222;HUWC-UFC ;Hospital Universitário Walter Cantídio
+223;MEAC-UFC ;Maternidade-Escola Assis Chateaubriand
+225;HC-UFG ;Hospital das Clínicas da Universidade Federal de Goiás
+227;HU-UFJF ;Hospital Universitário da Universidade Federal de Juiz de Fora
+228;HC-UFMG ;Hospital das Clínicas da Universidade Federal de Minas Gerais
+229;HUJBB ;Hospital Universitário João de Barros Barreto
+230;HUBFS-UFPA ;Hospital Universitário Bettina Ferro Souza
+232;HC-UFPR ;Hospital de Clínicas da Universidade Federal do Paraná
+233;HC-UFPE ;Hospital das Clínicas da Universidade Federal de Pernambuco
+236;HU da UFGD ;Hospital Universitário da Universidade Federal da Grande Dourados
+237;HU-UFSC ;Hospital Universitário Prof. Polydoro Ernani de São Thiago
+239;HUAC-UFCG ;Hospital Universitário Alcides Carneiro
+240;HC-UFTM ;Hospital de Clínicas da Universidade Federal do Triângulo Mineiro
+241;HUGGUnirio ;Hospital Universitário Gaffree e Guinle
+242;HUGV-UFAM ;Hospital Universitário Getúlio Vargas
+243;HUB-UnB ;Hospital Universitário de Brasília
+244;HU-UFMA ;Hospital Universitário da Fundação Universidade do Maranhão
+245;HU-FURG ;Hospital Universitário Dr. Miguel Riet Corrêa Jr.
+247;HUJM-UFMT ;Hospital Júlio Muller
+248;HE UFPel ;Hospital das Clínicas da Fundação Universidade Federal de Pelotas
+249;HU-UFPI ;Hospital Universitário da Fundação Universidade Federal do Piauí
+250;HU-UFS ;Hospital Universitário da Fundação Universidade Federal de Sergipe
+251;HUMAP ;Hospital Universitário Maria Pedrossian
+252;IFAL ;Instituto Federal de Alagoas
+253;IFAM ;Instituto Federal do Amazonas
+254;IF Baiano ;Instituto Federal Baiano
+255;IFCE ;Instituto Federal do Ceará
+256;IFES ;Instituto Federal do Espírito Santo
+257;IF Goiano ;Instituto Federal Goiano
+258;IFMA ;Instituto Federal do Maranhão
+259;IFMG ;Instituto Federal de Minas Gerais
+260;IFNMG ;Instituto Federal do Norte de Minas Gerais
+261;IF Sudeste ;Instituto Federal do Sudeste de Minas Gerais
+262;IFSULDEMINAS ;Instituto Federal do Sul de Minas Gerais
+263;IFTM ;Instituto Federal do Triângulo Mineiro
+264;IFMT ;Instituto Federal do Mato Grosso
+265;IFMS ;Instituto Federal do Mato Grosso do Sul
+266;IFPA ;Instituto Federal do Pará
+267;IFPB ;Instituto Federal da Paraíba
+268;IFPE ;Instituto Federal de Pernambuco
+269;IFRS ;Instituto Federal do Rio Grande do Sul
+270;IF Farroupilha ;Instituto Federal Farroupilha
+271;IFRO ;Instituto Federal de Rondônia
+272;IFC ;Instituto Federal Catarinense
+273;IFS ;Instituto Federal de Sergipe
+274;IFTO ;Instituto Federal do Tocantins
+275;IFAC ;Instituto Federal do Acre
+276;IFAP ;Instituto Federal do Amapá
+277;IFBA ;Instituto Federal da Bahia
+278;IFB ;Instituto Federal de Brasília
+279;IFG ;Instituto Federal de Goiás
+280;IF Sertão-PE ;Instituto Federal do Sertão Pernambucano
+281;IFPI ;Instituto Federal do Piauí
+282;IFPR ;Instituto Federal do Paraná
+283;IFRJ ;Instituto Federal do Rio de Janeiro
+284;IFF ;Instituto Federal Fluminense
+285;IFRN ;Instituto Federal do Rio Grande do Norte
+286;IFSul ;Instituto Federal Sul-rio-grandense
+287;IFRR ;Instituto Federal de Roraima
+288;IFSC ;Instituto Federal de Santa Catarina
+289;IFSP ;Instituto Federal de São Paulo
+290;UFFS ;Universidade Federal da Fronteira Sul
+291;UFOPA ;Universidade Federal do Oeste do Pará
+292;UNILAB ;Universidade da Integração Internacional da Lusofonia Afro-Brasileira
+293;EBSERH ;Empresa Brasileira de Serviços Hospitalares
+294;MVFA ;Maternidade Victor Ferreira do Amaral
+296;UFOB ;Universidade Federal do Oeste da Bahia
+297;UNIFESSPA ;Universidade Federal do Sul e Sudeste do Pará
+298;UFCA ;Universidade Federal do Cariri
+299;UFSB ;Universidade Federal do Sul da Bahia
+300;HU-UNIVASF ;Hospital Universitário da Universidade Federal do Vale do São Francisco
+301;MDIC ;Ministério da Indústria, Comércio Exterior e Serviços
+302;INMETRO ;Instituto Nacional de Metrologia, Qualidade e Tecnologia
+303;INPI ;Instituto Nacional da Propriedade Industrial
+304;SUFRAMA ;Superintendência da Zona Franca de Manaus
+305;DPU ;Defensoria Pública da União
+306;MJSP ;Ministério da Justiça e Segurança Pública
+307;AN ;Arquivo Nacional
+308;DPRF ;Departamento de Polícia Rodoviária Federal
+309;DPF ;Departamento de Polícia Federal
+310;FUNAI ;Fundação Nacional do Índio
+311;CADE ;Conselho Administrativo de Defesa Econômica
+313;FUNPEN ;Fundo Penitenciário Nacional
+314;FNSP ;Fundo Nacional de Segurança Pública
+315;FUNAD ;Fundo Nacional Antidrogas
+316;MME ;Ministério de Minas e Energia
+317;CEPEL ;Centro de Pesquisas de Energia Elétrica
+318;CPRM ;Companhia de Pesquisa de Recursos Minerais
+320;ELETRONUCLEAR ;Eletrobras Termonuclear S.A.
+321;ELETROBRAS ;Centrais Elétricas Brasileiras S.A.
+322;ELETRONORTE ;Centrais Elétricas do Norte do Brasil S.A.
+323;ELETROSUL ;ELETROSUL Centrais Elétricas S.A.
+324;CHESF ;Companhia Hidro Elétrica do São Francisco
+325;FURNAS ;FURNAS - Centrais Elétricas S.A.
+326;PETROBRAS ;Petróleo Brasileiro S.A.
+329;BR ;Petrobras Distribuidora S.A.
+333;DNPM ;Departamento Nacional de Produção Mineral
+334;ELETROPAR ;Eletrobras Participações S.A.
+335;ANP ;Agência Nacional do Petróleo, Gás Natural e Biocombustíveis
+336;ANEEL ;Agência Nacional de Energia Elétrica
+337;ELETROACRE ;Companhia de Eletricidade do Acre
+338;CEAL ;Companhia Energética de Alagoas
+340;CERON ;Centrais Elétricas de Rondônia S.A.
+341;TBG ;Transportadora Brasileira Gasoduto Bolívia-Brasil S.A.
+343;AmE ;Amazonas Distribuidora de Energia S.A.
+344;TRANSPETRO ;Petrobras Transporte S.A.
+346;CGTEE ;Companhia de Geração Térmica de Energia Elétrica
+367;TAG ;Transportadora Associada de Gás S.A.
+368;EPE ;Empresa de Pesquisa Energética
+369;LIQUIGÁS ;Liquigás Distribuidora S.A.
+393;PETROQUÍMICASUAPE ;Companhia Petroquímica de Pernambuco
+394;BREITENER ;Breitener Energética S.A.
+395;MANGUE SECO 2 ;Eólica Mangue Seco 2 - Geradora e Comercializadora de Energia Elétrica S.A.
+399;GBD ;Gás Brasiliano Distribuidora S.A.
+407;BREITENER JARAQUI ;Breitener Jaraqui S.A.
+408;BREITENER TAMBAQUI ;Breitener Tambaqui S.A.
+409;UIRAPURU ;Uirapuru Transmissora de Energia S.A.
+410;TSBE ;Transmissora Sul Brasileira de Energia S.A.
+412;AmGT ;Amazonas Geração e Transmissão de Energia S.A.
+414;ARAUCÁRIA ;Araucária Nitrogenados S.A.
+422;LOGIGAS ;Petrobras Logística de Gás S.A.
+424;TGO ;Transenergia Goiás S.A.
+443;MPF ;Ministério Público Federal
+444;MPM ;Ministério Público Militar
+445;MPDFT ;Ministério Público do Distrito Federal e dos Territórios
+446;MPT ;Ministério Público do Trabalho
+447;ESMPU ;Escola Superior do Ministério Público da União
+448;MRE ;Ministério das Relações Exteriores
+449;FUNAG ;Fundação Alexandre de Gusmão
+450;MS ;Ministério da Saúde
+451;FIOCRUZ ;Fundação Oswaldo Cruz
+452;Conceição ;Hospital Nossa Senhora da Conceição S.A.
+453;FUNASA ;Fundação Nacional de Saúde
+454;ANVISA ;Agência Nacional de Vigilância Sanitária
+455;ANS ;Agência Nacional de Saúde Suplementar
+456;HEMOBRÁS ;Empresa Brasileira de Hemoderivados e Biotecnologia
+457;FNS ;Fundo Nacional de Saúde
+458;CGU ;Ministério da Transparência e Controladoria-Geral da União
+459;MT ;Ministério dos Transportes, Portos e Aviação Civil
+460;VALEC ;VALEC - Engenharia, Construções e Ferrovias S.A.
+461;CDC ;Companhia Docas do Ceará
+462;CODESA ;Companhia Docas do Espírito Santo
+463;CODEBA ;Companhia das Docas do Estado da Bahia
+464;CODESP ;Companhia Docas do Estado de São Paulo
+465;CODOMAR ;Companhia Docas do Maranhão
+466;CDP ;Companhia Docas do Pará
+467;CDRJ ;Companhia Docas do Rio de Janeiro
+468;CODERN ;Companhia Docas do Rio Grande do Norte
+469;ANTT ;Agência Nacional de Transportes Terrestres
+470;ANTAQ ;Agência Nacional de Transportes Aquaviários
+471;DNIT ;Departamento Nacional de Infra-Estrutura de Transportes
+472;ANAC ;Agência Nacional de Aviação Civil
+473;INFRAERO ;Empresa Brasileira de Infraestrutura Aeroportuária
+476;MTb ;Ministério do Trabalho
+477;Fundacentro ;Fundação Jorge Duprat Figueiredo de Segurança e Medicina do Trabalho
+479;MinC ;Ministério da Cultura
+480;FCRB ;Fundação Casa de Rui Barbosa
+481;BN ;Fundação Biblioteca Nacional
+482;FCP ;Fundação Cultural Palmares
+483;IPHAN ;Instituto do Patrimônio Histórico e Artístico Nacional
+484;FUNARTE ;Fundação Nacional de Artes
+485;ANCINE ;Agência Nacional do Cinema
+486;IBRAM ;Instituto Brasileiro de Museus
+488;MMA ;Ministério do Meio Ambiente
+489;SFB ;Serviço Florestal Brasileiro
+490;Ibama ;Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis
+491;ANA ;Agência Nacional de Águas
+492;JBRJ ;Instituto de Pesquisas Jardim Botânico do Rio de Janeiro
+493;ICMBIO ;Instituto Chico Mendes de Conservação da Biodiversidade
+496;MPDG ;Ministério do Planejamento, Desenvolvimento e Gestão
+497;IPEA ;Instituto de Pesquisa Econômica Aplicada
+498;IBGE ;Fundação Instituto Brasileiro de Geografia e Estatística
+499;BNDES ;Banco Nacional de Desenvolvimento Econômico e Social
+500;BNDESPAR ;Bndes - Participações S.A.
+501;FINAME ;Agência Especial de Financiamento Industrial
+502;ENAP ;Fundação Escola Nacional de Administração Pública
+504;ABGF ;Agência Brasileira Gestora de Fundos Garantidores e Garantias S.A.
+506;ME ;Ministério do Esporte
+509;MD ;Ministério da Defesa
+510;COMAER ;Comando da Aeronáutica
+511;CEX ;Comando do Exército
+512;CM ;Comando da Marinha
+514;CFIAe ;Caixa de Financiamento Imobiliário da Aeronáutica
+515;IMBEL ;Indústria de Material Bélico do Brasil
+516;FOSORIO ;Fundação Osório
+517;EMGEPRON ;Empresa Gerencial de Projetos Navais
+518;CCCPM ;Caixa de Construções de Casas para o Pessoal da Marinha
+519;AMAZUL ;Amazônia Azul Tecnologias de Defesa S.A.
+521;HFA ;Hospital das Forças Armadas
+527;MI ;Ministério da Integração Nacional
+528;CODEVASF ;Companhia de Desenvolvimento dos Vales do São Francisco e do Parnaíba
+529;SUDAM ;Superintendência do Desenvolvimento da Amazônia
+530;SUDENE ;Superintendência do Desenvolvimento do Nordeste
+531;DNOCS ;Departamento Nacional de Obras Contra as Secas
+532;SUDECO ;Superintendência do Desenvolvimento do Centro-Oeste
+533;MTur ;Ministério do Turismo
+534;EMBRATUR ;Instituto Brasileiro de Turismo
+535;MDS ;Ministério do Desenvolvimento Social
+536;INSS ;Instituto Nacional do Seguro Social
+539;MCidades ;Ministério das Cidades
+540;TRENSURB ;Empresa de Trens Urbanos de Porto Alegre S.A.
+541;CBTU ;Companhia Brasileira de Trens Urbanos
+544;CNMP ;Conselho Nacional do Ministério Público
+546;AGU ;Advocacia-Geral da União
+547;MDH ;Ministério dos Direitos Humanos
+550;ABDI ;Agência Brasileira de Desenvolvimento Industrial
+551;APEX Brasil ;Agência Brasileira de Promoção de Exportações e Investimentos
+552;ANATER ;Agência Nacional de Assistência Técnica e Extensão Rural
+553;Embrapii ;Associação Brasileira de Pesquisa e Inovação Industrial
+554;APS ;Associação das Pioneiras Sociais
+555;Impa ;Associação Instituto Nacional de Matemática Pura e Aplicada
+556;RNP ;Associação Rede Nacional de Ensino e Pesquisa
+558;CBPF ;Centro Brasileiro de Pesquisas Físicas
+559;CGEE ;Centro de Gestão e Estudos Estratégicos
+561;CTI ;Centro de Tecnologia da Informação Renato Archer
+562;Cetem ;Centro de Tecnologia Mineral
+563;Censipam ;Centro Gestor e Operacional do Sistema de Proteção da Amazônia
+564;CNPEM ;Centro Nacional de Pesquisa em Energia e Materiais
+565;CENP ;Centro Nacional de Primatas
+567;CARF ;Conselho Administrativo de Recursos Fiscais
+568;CJF ;Conselho da Justiça Federal
+569;CAU_BR ;Conselho de Arquitetura e Urbanismo do Brasil
+570;Coaf ;Conselho de Controle de Atividades Financeiras
+571;CFA ;Conselho Federal de Administração
+572;CFB ;Conselho Federal de Biblioteconomia
+573;CFBio ;Conselho Federal de Biologia
+574;CFBM ;Conselho Federal de Biomedicina
+575;CFC ;Conselho Federal de Contabilidade
+576;Cofeci ;Conselho Federal de Corretores de Imóveis
+577;Cofecon ;Conselho Federal de Economia
+579;Confef ;Conselho Federal de Educação Física
+580;Confen ;Conselho Federal de Enfermagem
+581;Confea ;Conselho Federal de Engenharia e Agronomia
+583;CFF ;Conselho Federal de Farmácia
+585;CFFA ;Conselho Federal de Fonoaudiologia
+586;CFM ;Conselho Federal de Medicina
+587;CFMV ;Conselho Federal de Medicina Veterinária
+588;Cofem ;Conselho Federal de Museologia
+589;CFN ;Conselho Federal de Nutricionistas
+590;CFO ;Conselho Federal de Odontologia
+591;CFP ;Conselho Federal de Psicologia
+592;CFQ ;Conselho Federal de Química
+593;Conferp ;Conselho Federal de Relações Públicas
+594;Confere ;Conselho Federal de Representantes Comerciais
+595;CFESS ;Conselho Federal de Serviço Social
+596;Conter ;Conselho Nacional de Técnicos em Radiologia
+598;EDRR ;Eletrobrás Distribuição Roraima
+599;Esaf ;Escola de Administração Fazendária ==> SIGILOSO
+600;EMCFA ;Estado-Maior Conjunto das Forças Armadas
+604;FBB ;Fundação Banco do Brasil
+620;FGHab ;Fundo Garantidor da Habitação Popular
+623;HFCF ;Hospital Federal Cardoso Fontes
+627;HFSE ;Hospital Federal dos Servidores Do Estado
+628;HFI ;Hospital Federal Ipanema
+629;IBICT ;Instituto Brasileiro de Informação em Ciência e Tecnologia
+630;IDSM ;Instituto de Desenvolvimento Sustentável Mamirauá
+634;INC ;Instituto Nacional De Cardiologia
+635;INMET ;Instituto Nacional de Meteorologia
+636;Inpa ;Instituto Nacional de Pesquisas da Amazônia
+637;Inpe ;Instituto Nacional de Pesquisas Espaciais
+638;INT ;Instituto Nacional de Tecnologia
+640;Inca ;Instituto Nacional do Câncer
+641;INSA ;Instituto Nacional do Semiárido
+642;LNA ;Laboratório Nacional de Astrofísica
+643;LNCC ;Laboratório Nacional de Computação Científica
+644;MAST ;Museu de Astronomia e Ciências Afins
+645;MPEG ;Museu Paraense Emílio Goeldi
+646;ON ;Observatório Nacional
+647;STN ;Secretaria do Tesouro Nacional ==> SIGILOSO
+648;Sebrae_DN ;Serviço Brasileiro de Apoio às Micro e Pequenas Empresas - Departamento Nacional
+649;Senac_DN ;Serviço Nacional de Aprendizagem Comercial - Departamento Nacional
+650;Sescoop_UN ;Serviço Nacional de Aprendizagem do Cooperativismo - Unidade Nacional
+651;Senat_CN ;Serviço Nacional de Aprendizagem do Transporte - Conselho Nacional
+653;Senar_Adm. Central ;Serviço Nacional de Aprendizagem Rural - Administração Central
+656;SESC ;Serviço Social do Comércio - Administração Nacional
+657;Sest_CN ;Serviço Social do Transporte - Conselho Nacional
+658;DGP_EB ;Exército_Departamento-Geral do Pessoal
+659;DEC_EB ;Exército_Departamento de Engenharia e Construção
+660;DECEx_EB ;Exército_Departamento de Educação e Cultura do Exército
+661;COTER_EB ;Exército_Comando de Operações Terrestres
+662;DCT_EB ;Exército_Departamento de Ciência e Tecnologia
+663;SEF_EB ;Exército_Secretaria de Economia e Finanças
+664;COLOG_EB ;Exército_COLOG – Comando Logístico
+666;SJDF ;Seção Judiciária do Distrito Federal
+667;JFBA ;Seção Judiciária do Estado da Bahia
+668;JFPB ;Seção Judiciária do Estado da Paraíba
+669;SJAL ;Seção Judiciária do Estado de Alagoas
+670;JFGO ;Seção Judiciária do Estado de Goiás
+671;JFMT ;Seção Judiciária do Estado de Mato Grosso
+672;JFMG ;Seção Judiciária do Estado de Minas Gerais
+673;SJPE ;Seção Judiciária do Estado de Pernambuco
+674;JFRO ;Seção Judiciária do Estado de Rondônia
+675;JFRR ;Seção Judiciária do Estado de Roraima
+676;JFSC ;Seção Judiciária do Estado de Santa Catarina
+677;SJSP ;Seção Judiciária do Estado de São Paulo
+678;JFSE ;Seção Judiciária do Estado de Sergipe
+679;JFTO ;Seção Judiciária do Estado de Tocantins
+680;SJAC ;Seção Judiciária do Estado do Acre
+681;SJAP ;Seção Judiciária do Estado do Amapá
+682;JFAM ;Seção Judiciária do Estado do Amazonas
+683;JFCE ;Seção Judiciária do Estado do Ceará
+684;SJES ;Seção Judiciária do Estado do Espírito Santo
+685;SJ_MA ;Seção Judiciária do Estado do Maranhão
+686;SJPA ;Seção Judiciária do Estado do Pará
+687;JFPR ;Seção Judiciária do Estado do Paraná
+688;SJPI ;Seção Judiciária do Estado do Piauí
+690;JFRN ;Seção Judiciária do Estado do Rio Grande do Norte
+691;SJRS ;Seção Judiciária do Estado do Rio Grande do Sul
+698;SPOA-MF ;Subsecretaria de Planejamento, Orçamento e Administração_MF
+699;PCDF ;GDF_Polícia Civil do DF
+700;CBMDF ;GDF_Corpo de Bombeiros Militar do DF
+701;PMDF ;GDF_Polícia Militar do DF
