@@ -20,7 +20,7 @@ names(painel) <- gsub("[ .]", "_", names(painel))
 # Remover casos com NA
 painel = painel %>%
   mutate(orcamento_aprov_pl = projeto_de_lei) %>%
-  select(-c(projeto_de_lei))
+  select(-c(projeto_de_lei)) %>%
   filter(!(is.na(ano)), ano != "Total", orgao_orcamentario != "") %>%
   mutate(ano = as.integer(ano)) %>%
   filter(ano >= 2013 & ano <= 2019) %>%
@@ -38,8 +38,8 @@ variaveis_numericas = c(
 
 # Conserto dos nomes
 # Transformação em encoding ASCII para tirar acentos
-painel$orgao_orcamentario = iconv(painel$orgao_orcamentario, from = "utf-8", to = "ASCII//TRANSLIT")
-painel$unidade_orcamentaria = iconv(painel$unidade_orcamentaria, from = "utf-8", to = "ASCII//TRANSLIT")
+painel$orgao_orcamentario = tolower(iconv(painel$orgao_orcamentario, from = "utf-8", to = "ASCII//TRANSLIT"))
+painel$unidade_orcamentaria = tolower(iconv(painel$unidade_orcamentaria, from = "utf-8", to = "ASCII//TRANSLIT"))
 
 # Cria ids de órgãos e unidades orçamentárias
 painel$id_orgao_orcamentario = stri_extract(painel$orgao_orcamentario, regex = "^[0-9]+")
@@ -97,7 +97,10 @@ painel2 <- painel %>%
     )
   ) %>%
   mutate_at(.vars = vars(variaveis_numericas),
-            .funs = ~ as.numeric(.))
+            .funs = ~ as.numeric(.)/12)
+
+painel2$orgao_orcamentario = toupper(painel2$orgao_orcamentario)
+painel2$unidade_orcamentaria = toupper(painel2$unidade_orcamentaria)
 
 # Salvar painel num arquivo xlsx
 wb = createWorkbook()

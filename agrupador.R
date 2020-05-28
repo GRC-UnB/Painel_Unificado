@@ -99,6 +99,12 @@ painel_TCU2016 = merge(x = painel_TCU2016,
                        y = nomes,
                        by = "id")
 
+
+# Junta as bases do TCU em uma só
+
+TCU = bind_rows(painel_TCU2018,painel_TCU2017)
+TCU = bind_rows(TCU,painel_TCU2016)
+
 ###### PAINEIS UNIFICADOS ######
 painel_UNIFICADO = merge(
    x = painel_SIAPE,
@@ -209,7 +215,8 @@ painel_UNIFICADO = merge(
    y = painel_SIOP,
    by.x = c("nome_tratado", "ano"),
    by.y = c("unidade_orcamentaria", "ano"),
-   all.x = T
+   all.x = T,
+   no.dups = T
 )
 
 
@@ -227,67 +234,16 @@ if (length(nomes.y) > 0) {
 
 painel_UNIFICADO = merge(
    x = painel_UNIFICADO,
-   y = painel_TCU2018,
+   y = TCU,
    by.x = c("nome_tratado", "ano"),
    by.y = c("nome_tratado", "ano"),
-   all = T
+   all.x = T,
+   no.dups = T
 )
 
 
-# CORREÇÃO DE COLUNAS DUPLAS
-nomes.y = grep(pattern = "[.]y", names(painel_UNIFICADO))
-if (length(nomes.y) > 0) {
-   painel_UNIFICADO = painel_UNIFICADO[-nomes.y]
-   nomes.x = gsub(
-      pattern = "[.]x",
-      replacement = "",
-      x = names(painel_UNIFICADO)
-   )
-   names(painel_UNIFICADO) =  nomes.x
-}
-
-painel_UNIFICADO = merge(
-   x = painel_UNIFICADO,
-   y = painel_TCU2017,
-   by.x = c("nome_tratado", "ano"),
-   by.y = c("nome_tratado", "ano"),
-   all = T
-)
-
-
-# CORREÇÃO DE COLUNAS DUPLAS
-nomes.y = grep(pattern = "[.]y", names(painel_UNIFICADO))
-if (length(nomes.y) > 0) {
-   painel_UNIFICADO = painel_UNIFICADO[-nomes.y]
-   nomes.x = gsub(
-      pattern = "[.]x",
-      replacement = "",
-      x = names(painel_UNIFICADO)
-   )
-   names(painel_UNIFICADO) =  nomes.x
-}
-
-
-
-painel_UNIFICADO = merge(
-   x = painel_UNIFICADO,
-   y = painel_TCU2016,
-   by.x = c("nome_tratado", "ano"),
-   by.y = c("nome_tratado", "ano"),
-   all = T
-)
-
-# CORREÇÃO DE COLUNAS DUPLAS
-nomes.y = grep(pattern = "[.]y", names(painel_UNIFICADO))
-if (length(nomes.y) > 0) {
-   painel_UNIFICADO = painel_UNIFICADO[-nomes.y]
-   nomes.x = gsub(
-      pattern = "[.]x",
-      replacement = "",
-      x = names(painel_UNIFICADO)
-   )
-   names(painel_UNIFICADO) =  nomes.x
-}
+painel_UNIFICADO = painel_UNIFICADO %>%
+   select(-c(nome,orgao_orcamentario,id_orgao_orcamentario,id_unidade_orcamentaria))
 
 nrow(painel_UNIFICADO)
 
