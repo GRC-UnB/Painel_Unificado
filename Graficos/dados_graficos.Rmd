@@ -1,0 +1,45 @@
+---
+title: "Gráficos"
+output: 
+  html_document: 
+    self_contained: no
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+```
+
+```{r loading, message=FALSE, warning=FALSE, include=FALSE}
+rm(list = ls())
+library(tidyverse)
+library(ggplot2)
+library(openxlsx)
+library(plotly)
+
+
+graficos = read_rds("graficos.RDS")
+```
+
+```{R graficos, echo=FALSE, warning=FALSE}
+
+graficos[[1]]
+graficos[[2]]
+graficos[[3]]
+graficos[[4]]
+graficos[[5]]
+graficos[[6]]
+graficos[[7]]
+graficos[[8]]
+graficos[[9]]
+graficos[[10]]
+graficos[[11]]
+graficos[[12]]
+graficos[[13]]
+graficos[[14]]
+graficos[[15]]
+graficos[[15]]
+graficos[[17]]
+graficos[[18]]
+graficos[[19]]
+
+```

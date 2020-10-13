@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Gráficos</title>
+
+<script src="dados_graficos_files/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="dados_graficos_files/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="dados_graficos_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="dados_graficos_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="dados_graficos_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="dados_graficos_files/navigation-1.1/tabsets.js"></script>
+<link href="dados_graficos_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="dados_graficos_files/highlightjs-9.12.0/highlight.js"></script>
+<script src="dados_graficos_files/htmlwidgets-1.5.2/htmlwidgets.js"></script>
+<script src="dados_graficos_files/plotly-binding-4.9.2.1/plotly.js"></script>
+<script src="dados_graficos_files/typedarray-0.1/typedarray.min.js"></script>
+<link href="dados_graficos_files/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<script src="dados_graficos_files/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+<link href="dados_graficos_files/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="dados_graficos_files/plotly-main-1.52.2/plotly-latest.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Gráficos</h1>
+
+</div>
+
+
+<p><div id="htmlwidget-c8e60c2505a39c9aa61a" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c8e60c2505a39c9aa61a">{"x":{"visdat":{"4338113e3b64":["function () ","plotlyVisDat"]},"cur_data":"4338113e3b64","attrs":{"4338113e3b64":{"x":{},"y":{},"mode":"lines+markers","color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Remuneração Média dos órgãos por adoção de política de GRC","yaxis":{"domain":[0,1],"automargin":true,"title":"Remuneração Média em R$"},"xaxis":{"domain":[0,1],"automargin":true,"title":"ano"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[6940.54135775271,7401.95580678342,8073.6870469449,8373.51256010929,9164.90408960403,9561.84928485732,8738.89425421375],"mode":"lines+markers","type":"scatter","name":"Não adotou","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[13967.3059736842,14176.4535828598,14579.8173624614,13776.793579604,9319.75751924571,10212.9773479574,10782.3520844143],"mode":"lines+markers","type":"scatter","name":"Adotou","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-e32564195c6330a4c723" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e32564195c6330a4c723">{"x":{"visdat":{"43384fd15fd":["function () ","plotlyVisDat"]},"cur_data":"43384fd15fd","attrs":{"43384fd15fd":{"x":{},"y":{},"mode":"lines+markers","color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Remuneração Média dos órgãos por adoção de plano de integridade","yaxis":{"domain":[0,1],"automargin":true,"title":"Remuneração Média em R$"},"xaxis":{"domain":[0,1],"automargin":true,"title":"ano"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[6991.32987322408,7455.19135202794,8122.73915614007,8277.31126511337,8765.95795408526,8958.38554553325,9075.71770650427],"mode":"lines+markers","type":"scatter","name":"Não adotou","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2015,2016,2017,2018,2019],"y":[14674.8197273074,12170.4424412669,13427.7747668484,12211.3698673175,10407.36127937],"mode":"lines+markers","type":"scatter","name":"Adotou","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-b6388cd383890e760124" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b6388cd383890e760124">{"x":{"visdat":{"4338f36391b":["function () ","plotlyVisDat"]},"cur_data":"4338f36391b","attrs":{"4338f36391b":{"x":{},"y":{},"mode":"lines+markers","color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Remuneração Média dos órgãos por adoção de POSIC","yaxis":{"domain":[0,1],"automargin":true,"title":"Remuneração Média em R$"},"xaxis":{"domain":[0,1],"automargin":true,"title":"ano"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[7100.71202607801,7608.33222284747,8330.91660199095,8513.45775656394,8925.17540828337,9601.04079652214,10069.4239955021],"mode":"lines+markers","type":"scatter","name":"Não adotou","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[6577.82600971043,6942.35992587945,7603.87104296657,8263.38113273763,9551.12821368359,10157.4511512436,10259.3687957449],"mode":"lines+markers","type":"scatter","name":"Adotou","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-a51e89915bf1e97155af" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a51e89915bf1e97155af">{"x":{"visdat":{"433861af5b8b":["function () ","plotlyVisDat"]},"cur_data":"433861af5b8b","attrs":{"433861af5b8b":{"x":{},"y":{},"mode":"lines+markers","color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Remuneração mediana dos órgãos por adoção de política de GRC","yaxis":{"domain":[0,1],"automargin":true,"title":"Remuneração Média em R$"},"xaxis":{"domain":[0,1],"automargin":true,"title":"ano"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[5935.38435339531,6307.25112488688,6818.70989256198,7096.22422147457,7626.65862660944,7711.98128759311,7581.29354559741],"mode":"lines+markers","type":"scatter","name":"Não adotou","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[12896.6681456013,13362.2777560122,13484.4885010864,11152.3405829983,8804.07381065652,9052.77110995092,8784.40564285107],"mode":"lines+markers","type":"scatter","name":"Adotou","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-cc778aabc729f27729db" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-cc778aabc729f27729db">{"x":{"visdat":{"43382d471016":["function () ","plotlyVisDat"]},"cur_data":"43382d471016","attrs":{"43382d471016":{"x":{},"y":{},"mode":"lines+markers","color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Remuneração mediana dos órgãos por adoção de plano de integridade","yaxis":{"domain":[0,1],"automargin":true,"title":"Remuneração Média em R$"},"xaxis":{"domain":[0,1],"automargin":true,"title":"ano"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[5966.32079671286,6322.66638521546,6851.72670138889,7111.283185438,7654.37414863997,7559.39596467907,7605.29805948318],"mode":"lines+markers","type":"scatter","name":"Não adotou","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2015,2016,2017,2018,2019],"y":[14088.2775252525,11456.2704545455,11011.8519679767,10175.4563254917,8248.22252618349],"mode":"lines+markers","type":"scatter","name":"Adotou","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-4fe509ee30448c5af20a" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4fe509ee30448c5af20a">{"x":{"visdat":{"433828dc647c":["function () ","plotlyVisDat"]},"cur_data":"433828dc647c","attrs":{"433828dc647c":{"x":{},"y":{},"mode":"lines+markers","color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Remuneração mediana dos órgãos por adoção de POSIC","yaxis":{"domain":[0,1],"automargin":true,"title":"Remuneração Média em R$"},"xaxis":{"domain":[0,1],"automargin":true,"title":"ano"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[6000.43638150909,6364.13564841076,6926.02474337822,7172.24846837242,7637.87098422611,7935.05918217395,8133.90569458775],"mode":"lines+markers","type":"scatter","name":"Não adotou","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[5817.47047002877,6163.0773470015,6592.58822858061,7086.18844690322,7910.80705087287,8487.70535453943,8014.66575720739],"mode":"lines+markers","type":"scatter","name":"Adotou","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-d0d6e662a1b22c2f85b3" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d0d6e662a1b22c2f85b3">{"x":{"visdat":{"433875f54d48":["function () ","plotlyVisDat"]},"cur_data":"433875f54d48","attrs":{"433875f54d48":{"x":{},"y":{},"mode":"lines+markers","color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Tempo médio de serviços dos servidores por adoção de política de GRC","yaxis":{"domain":[0,1],"automargin":true,"title":"Tempo médio de serviço em anos"},"xaxis":{"domain":[0,1],"automargin":true,"title":"ano"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[15.8512144065504,15.1604124838596,14.5821731109323,14.0131545784481,13.9690719776143,13.0877625394568,13.4185487654729],"mode":"lines+markers","type":"scatter","name":"Não adotou","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[15.7907927718488,14.4077136148571,13.256541795361,12.9271089030798,15.0738109699538,14.2052413258,13.4017097993852],"mode":"lines+markers","type":"scatter","name":"Adotou","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-b2bd30f84a4ef681a937" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b2bd30f84a4ef681a937">{"x":{"visdat":{"43381edd538c":["function () ","plotlyVisDat"]},"cur_data":"43381edd538c","attrs":{"43381edd538c":{"x":{},"y":{},"mode":"lines+markers","color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Tempo médio de serviços dos servidores por adoção de plano de integridade","yaxis":{"domain":[0,1],"automargin":true,"title":"Tempo médio de serviço em anos"},"xaxis":{"domain":[0,1],"automargin":true,"title":"ano"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[15.8507776873195,15.1544976103731,14.5610371974896,13.7628733712022,13.5731245383,12.3736686966072,13.0287933736973],"mode":"lines+markers","type":"scatter","name":"Não adotou","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2015,2016,2017,2018,2019],"y":[29.7195873844365,19.9266321830348,20.1439132117174,16.8628901380058,13.4817554399349],"mode":"lines+markers","type":"scatter","name":"Adotou","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-28ae0e30b688e8bad8d0" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-28ae0e30b688e8bad8d0">{"x":{"visdat":{"433868dfd9":["function () ","plotlyVisDat"]},"cur_data":"433868dfd9","attrs":{"433868dfd9":{"x":{},"y":{},"mode":"lines+markers","color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Tempo médio de serviços dos servidores por adoção da POSIC","yaxis":{"domain":[0,1],"automargin":true,"title":"Tempo médio de serviço em anos"},"xaxis":{"domain":[0,1],"automargin":true,"title":"ano"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[16.1861660454238,15.6577119304727,15.0967392499256,15.0115479591319,15.5863247344527,15.6837537406845,15.6713309304259],"mode":"lines+markers","type":"scatter","name":"Não adotou","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[14.5829022872894,13.4693609453949,13.2221594945047,12.0764908325835,12.3123540929826,11.8755386690248,11.9963066229581],"mode":"lines+markers","type":"scatter","name":"Adotou","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-6cddcb545522ff475b68" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6cddcb545522ff475b68">{"x":{"visdat":{"43381a053e2e":["function () ","plotlyVisDat"]},"cur_data":"43381a053e2e","attrs":{"43381a053e2e":{"x":{},"y":{},"mode":"lines+markers","name":"Orçado - Adotou","colors":"orange","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"43381a053e2e.1":{"x":{},"y":{},"mode":"lines+markers","name":"Orçado - Não adotou","colors":"orange2","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"43381a053e2e.2":{"x":{},"y":{},"mode":"lines+markers","name":"Pago - Não adotou","colors":"orange2","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"43381a053e2e.3":{"x":{},"y":{},"mode":"lines+markers","name":"Pago - Adotou","colors":"orange5","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Orçamento médio dos órgãos por adoção de política de GRC","yaxis":{"domain":[0,1],"automargin":true,"title":"Orçamento médio em R$"},"xaxis":{"domain":[0,1],"automargin":true,"title":"ano"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[233048234.583333,171356474.027778,201606598.367816,234693316.118217,323189369.149729,211279288.654639,187337684.110703],"mode":"lines+markers","name":"Orçado - Adotou","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[135735813.182099,133850496.791996,142271855.645109,128074389.675235,127931564.990675,106125316.447334,46621262.3009777],"mode":"lines+markers","name":"Orçado - Não adotou","type":"scatter","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[93688269.7085538,100311232.375256,103131115.781557,107900340.48428,106412958.597696,87069365.7393736,39446746.911662],"mode":"lines+markers","name":"Pago - Não adotou","type":"scatter","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"line":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[222208221.666667,163815741.027778,186841094.836207,211797476.296512,292064289.683266,168103917.347938,148812105.028944],"mode":"lines+markers","name":"Pago - Adotou","type":"scatter","marker":{"color":"rgba(214,39,40,1)","line":{"color":"rgba(214,39,40,1)"}},"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"line":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-3114a7efd877db3393c7" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3114a7efd877db3393c7">{"x":{"visdat":{"433835aa4a1a":["function () ","plotlyVisDat"]},"cur_data":"433835aa4a1a","attrs":{"433835aa4a1a":{"x":{},"y":{},"mode":"lines+markers","name":"Orçado - Adotou","colors":"orange","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"433835aa4a1a.1":{"x":{},"y":{},"mode":"lines+markers","name":"Orçado - Não adotou","colors":"orange2","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"433835aa4a1a.2":{"x":{},"y":{},"mode":"lines+markers","name":"Pago - Não adotou","colors":"orange2","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"433835aa4a1a.3":{"x":{},"y":{},"mode":"lines+markers","name":"Pago - Adotou","colors":"orange5","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Orçamento médio dos órgãos por adoção da posic","yaxis":{"domain":[0,1],"automargin":true,"title":"Orçamento médio em R$"},"xaxis":{"domain":[0,1],"automargin":true,"title":"ano"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[2016,2017,2018,2019],"y":[661481571.025,196663852.753401,238015436.793343,146299609.078329],"mode":"lines+markers","name":"Orçado - Adotou","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[136247983.821053,134144533.198897,143029542.804491,127744231.976358,153425593.371242,119690786.256058,84260357.5653846],"mode":"lines+markers","name":"Orçado - Não adotou","type":"scatter","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[94364690.5083333,100809090.021487,104200067.517613,107503661.699486,130700424.680936,94859695.6971779,63924264.3709936],"mode":"lines+markers","name":"Pago - Não adotou","type":"scatter","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"line":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2016,2017,2018,2019],"y":[644704108.625,170057588.581633,197341253.221504,119078493.828039],"mode":"lines+markers","name":"Pago - Adotou","type":"scatter","marker":{"color":"rgba(214,39,40,1)","line":{"color":"rgba(214,39,40,1)"}},"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"line":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-710b93152b5edce22308" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-710b93152b5edce22308">{"x":{"visdat":{"433838723c82":["function () ","plotlyVisDat"]},"cur_data":"433838723c82","attrs":{"433838723c82":{"x":{},"y":{},"mode":"lines+markers","name":"Orçado - Adotou","colors":"orange","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"433838723c82.1":{"x":{},"y":{},"mode":"lines+markers","name":"Orçado - Não adotou","colors":"orange2","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"433838723c82.2":{"x":{},"y":{},"mode":"lines+markers","name":"Pago - Não adotou","colors":"orange2","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"433838723c82.3":{"x":{},"y":{},"mode":"lines+markers","name":"Pago - Adotou","colors":"orange5","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Orçamento médio dos órgãos por adoção da posic","yaxis":{"domain":[0,1],"automargin":true,"title":"Orçamento médio em R$"},"xaxis":{"domain":[0,1],"automargin":true,"title":"ano"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[172732600.268287,146370717.321008,150314450.817851,102386135.288738,121776165.444106,147802354.649583,145589141.849496],"mode":"lines+markers","name":"Orçado - Adotou","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[129407118.237196,131139399.499864,140707002.444832,140568622.494458,169958149.475482,147441970.446537,110075266.441714],"mode":"lines+markers","name":"Orçado - Não adotou","type":"scatter","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[94502762.4577691,102492761.723413,108350826.684621,120091822.773025,147387249.764398,121129983.922374,83391218.8920953],"mode":"lines+markers","name":"Pago - Não adotou","type":"scatter","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"line":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[93628306.7780093,93959185.061994,91180746.4145416,82825045.1717253,98389913.6247096,115944378.2525,122285252.330919],"mode":"lines+markers","name":"Pago - Adotou","type":"scatter","marker":{"color":"rgba(214,39,40,1)","line":{"color":"rgba(214,39,40,1)"}},"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"line":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-c2adb1212bbc70793807" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c2adb1212bbc70793807">{"x":{"visdat":{"433879973e8e":["function () ","plotlyVisDat"]},"cur_data":"433879973e8e","attrs":{"433879973e8e":{"x":{},"y":{},"mode":"lines+markers","color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Orçamento médio dos órgãos por adoção de política de GRC","yaxis":{"domain":[0,1],"automargin":true,"title":"Orçamento médio em R$"},"xaxis":{"domain":[0,1],"automargin":true,"title":"ano"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[3320,3260,3197,3101,2232,1333,974],"mode":"lines+markers","type":"scatter","name":"Não adotou","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[15,31,57,116,446,879,1369],"mode":"lines+markers","type":"scatter","name":"Adotou","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-e1323eb900834ca66187" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e1323eb900834ca66187">{"x":{"visdat":{"433817185c8f":["function () ","plotlyVisDat"]},"cur_data":"433817185c8f","attrs":{"433817185c8f":{"x":{},"y":{},"mode":"lines+markers","color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Orçamento médio dos órgãos por adoção de política de GRC","yaxis":{"domain":[0,1],"automargin":true,"title":"Orçamento médio em R$"},"xaxis":{"domain":[0,1],"automargin":true,"title":"ano"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[3335,3291,3250,3180,2522,1642,811],"mode":"lines+markers","type":"scatter","name":"Não adotou","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2015,2016,2017,2018,2019],"y":[4,37,156,570,1532],"mode":"lines+markers","type":"scatter","name":"Adotou","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-b29599ffe49488819f85" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b29599ffe49488819f85">{"x":{"visdat":{"43386bf85e0a":["function () ","plotlyVisDat"]},"cur_data":"43386bf85e0a","attrs":{"43386bf85e0a":{"x":{},"y":{},"mode":"lines+markers","color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Orçamento médio dos órgãos por adoção de política de GRC","yaxis":{"domain":[0,1],"automargin":true,"title":"Orçamento médio em R$"},"xaxis":{"domain":[0,1],"automargin":true,"title":"ano"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[2939,2802,2649,2529,2040,1539,1416],"mode":"lines+markers","type":"scatter","name":"Não adotou","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[396,489,605,688,638,673,927],"mode":"lines+markers","type":"scatter","name":"Adotou","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-64c93b399a26aecfec24" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-64c93b399a26aecfec24">{"x":{"visdat":{"43386bf85e0a":["function () ","plotlyVisDat"]},"cur_data":"43386bf85e0a","attrs":{"43386bf85e0a":{"x":{},"y":{},"mode":"lines+markers","color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Orçamento médio dos órgãos por adoção de política de GRC","yaxis":{"domain":[0,1],"automargin":true,"title":"Orçamento médio em R$"},"xaxis":{"domain":[0,1],"automargin":true,"title":"ano"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[2939,2802,2649,2529,2040,1539,1416],"mode":"lines+markers","type":"scatter","name":"Não adotou","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2013,2014,2015,2016,2017,2018,2019],"y":[396,489,605,688,638,673,927],"mode":"lines+markers","type":"scatter","name":"Adotou","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-4aa02a2a28cb4a242310" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4aa02a2a28cb4a242310">{"x":{"visdat":{"4338178703e":["function () ","plotlyVisDat"]},"cur_data":"4338178703e","attrs":{"4338178703e":{"x":{},"y":{},"color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Mediana da Quantidade de Servidores por<br />Nível de Capacidade de Governança (IGG)","yaxis":{"domain":[0,1],"automargin":true,"title":"Quantidade de servidores no órgão"},"xaxis":{"domain":[0,1],"automargin":true,"title":"iGG","type":"category","categoryorder":"array","categoryarray":["0-Inexpressivo","1-Iniciando","2-Intermediário","3-Aprimorado"]},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":["0-Inexpressivo","1-Iniciando","2-Intermediário","3-Aprimorado"],"y":[1372,1432,591,1494],"type":"bar","name":"2017","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["0-Inexpressivo","1-Iniciando","2-Intermediário","3-Aprimorado"],"y":[1224.5,1522.5,866,2108],"type":"bar","name":"2018","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-b17a04d6a82c5c4c5fcf" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b17a04d6a82c5c4c5fcf">{"x":{"visdat":{"43384e2f7cd8":["function () ","plotlyVisDat"]},"cur_data":"43384e2f7cd8","attrs":{"43384e2f7cd8":{"x":{},"y":{},"color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Mediana da Quantidade de Servidores por<br />Nível de Capacidade de Governança (IGG)","yaxis":{"domain":[0,1],"automargin":true,"title":"Valores em R$"},"xaxis":{"domain":[0,1],"automargin":true,"title":"iGG","type":"category","categoryorder":"array","categoryarray":["0-Inexpressivo","1-Iniciando","2-Intermediário","3-Aprimorado"]},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":["0-Inexpressivo","1-Iniciando","2-Intermediário","3-Aprimorado"],"y":[31041340.3148148,81330817.9701393,223621084.003663,454694090.399999],"type":"bar","name":"2017 - Autorizado","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["0-Inexpressivo","1-Iniciando","2-Intermediário","3-Aprimorado"],"y":[27493245.1666666,66165151.1202623,194116137.619353,423569780.366667],"type":"bar","name":"2017 - Pago","marker":{"color":"rgba(252,141,98,1)","line":{"color":"rgba(252,141,98,1)"}},"textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["0-Inexpressivo","1-Iniciando","2-Intermediário","3-Aprimorado"],"y":[62278495.1666667,69474434.5460042,210253703.872396,272261189.131945],"type":"bar","name":"2018 - Autorizado","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["0-Inexpressivo","1-Iniciando","2-Intermediário","3-Aprimorado"],"y":[46915383.9074074,55754013.7137224,176334229.638021,243253974.493055],"type":"bar","name":"2018 - Pago","marker":{"color":"rgba(231,138,195,1)","line":{"color":"rgba(231,138,195,1)"}},"textfont":{"color":"rgba(231,138,195,1)"},"error_y":{"color":"rgba(231,138,195,1)"},"error_x":{"color":"rgba(231,138,195,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-ef4a66b5033c6467d391" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ef4a66b5033c6467d391">{"x":{"visdat":{"43387d7912f3":["function () ","plotlyVisDat"]},"cur_data":"43387d7912f3","attrs":{"43387d7912f3":{"x":{},"y":{},"color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Tempo médio de serviço dos Servidores por<br />Nível de Capacidade de Governança (IGG)","yaxis":{"domain":[0,1],"automargin":true,"title":"Tempo de serviço em anos"},"xaxis":{"domain":[0,1],"automargin":true,"title":"iGG","type":"category","categoryorder":"array","categoryarray":["0-Inexpressivo","1-Iniciando","2-Intermediário","3-Aprimorado"]},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":["0-Inexpressivo","1-Iniciando","2-Intermediário","3-Aprimorado"],"y":[13.826662465468,13.1720936402722,15.4446518097412,25.61151540236],"type":"bar","name":"2017","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["0-Inexpressivo","1-Iniciando","2-Intermediário","3-Aprimorado"],"y":[17.3777752690052,14.3172296955845,13.682759080008,20.4928619798573],"type":"bar","name":"2018","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script></p>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
