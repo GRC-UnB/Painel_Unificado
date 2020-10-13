@@ -247,7 +247,7 @@ graph3_grc_tempo_serv = plot_ly(data = tempo_serv_grc,
                                   color = ~politica_grc,
                                   type = "scatter",
                                   mode = "lines+markers") %>%
-  layout(title = "Tempo médio de serviços dos servidores por adoção de política de GRC",
+  layout(title = "Tempo médio de serviço dos servidores por adoção de política de GRC",
          yaxis = list(title = "Tempo médio de serviço em anos"))
 
 graph3_plaint_tempo_serv = plot_ly(data = tempo_serv_int,
@@ -256,7 +256,7 @@ graph3_plaint_tempo_serv = plot_ly(data = tempo_serv_int,
                          color = ~plano_int,
                          type = "scatter",
                          mode = "lines+markers") %>%
-  layout(title = "Tempo médio de serviços dos servidores por adoção de plano de integridade",
+  layout(title = "Tempo médio de serviço dos servidores por adoção de plano de integridade",
          yaxis = list(title = "Tempo médio de serviço em anos"))
 
 graph3_posic_tempo_serv = plot_ly(data = tempo_serv_posic,
@@ -265,7 +265,7 @@ graph3_posic_tempo_serv = plot_ly(data = tempo_serv_posic,
                          color = ~politica_posic,
                          type = "scatter",
                          mode = "lines+markers") %>%
-  layout(title = "Tempo médio de serviços dos servidores por adoção da POSIC",
+  layout(title = "Tempo médio de serviço dos servidores por adoção da POSIC",
          yaxis = list(title = "Tempo médio de serviço em anos"))
 
 
@@ -386,6 +386,3 @@ for(i in informacoes){
 
 saveRDS(object = lista,file = "graficos.RDS")
 
-for(i in informacoes){
-  htmlwidgets::saveWidget(widget = lista[[i]],file = paste0(i,".html"),selfcontained = T)
-}
